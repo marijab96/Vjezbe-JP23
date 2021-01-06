@@ -9,7 +9,7 @@ public class Zadatak3 {
         // Kreirati program koji za dva unesena broja ispisuje sve prim/prosti/prime brojeve između njih.
 
         Scanner ulaz = new Scanner(System.in);
-        System.out.println(Math.sqrt(101));
+
 
         System.out.println("Unesi broj 1: ");
         int x = ulaz.nextInt();
