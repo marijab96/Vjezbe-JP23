@@ -7,6 +7,8 @@ public class Zadatak1 {
 
     public static void main(String[] args) {
 
+        // Kreirati program koji unosi 24 broja, ispisuje njihov zbroj, najmanji i  najveći uneseni broj.
+
         int [] niz = new int[24];
 
         Scanner ulaz = new Scanner(System.in);
