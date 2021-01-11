@@ -29,13 +29,19 @@ public class Zadatak5 {
         while (start <= x * y) {
 
             for (int i = zadnjiStupac; i >= prviStupac; i--) {
-                matrica[zadnjiRed][i] = start++;//
+                matrica[zadnjiRed][i] = start++;
+
+                if (start > x * y)
+                    break;
             }
             zadnjiRed--;
 
 
             for (int i = zadnjiRed; i >= prviRed; i--) {
                 matrica[i] [prviStupac] = start++;
+
+                if (start > x * y)
+                    break;
 
             }
             prviStupac++;
@@ -44,11 +50,17 @@ public class Zadatak5 {
             for (int i = prviStupac; i <= zadnjiStupac; ++i) {
                 matrica[prviRed][i] = start++;
 
+                if (start > x * y)
+                    break;
+
             }
             prviRed++;
 
             for (int i = prviRed; i <= zadnjiRed; ++i) {
                 matrica[i][zadnjiStupac] = start++;
+
+                if (start > x * y)
+                    break;
 
             }
             zadnjiStupac--;
